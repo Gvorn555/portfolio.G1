@@ -1,0 +1,153 @@
+:root {
+
+    --color-dark: #0f172a;
+    --color-light: #e2e8f0;
+    --color-slate400: #94a3b8;
+    --color-slate600:#475569 ;
+    --color-slate800: #1e293b;
+    --color-orange: #dc2626;
+    --color-indigo: #6366f1;
+
+    /**size***/
+    --size-xxs : o.5rem;
+    --size-xs : 0.75rem;
+    --size-sm : 0.875rem;
+    --size-base : 1rem;
+    --size-lg : 1.25rem;
+    --size-xl : 1.5rem;
+    --size-2xl : 1.875rem;
+    --size-3xl :2.25rem ;
+    --size-5xl : 3rem;
+    --size-6xl : 3.75rem;
+    --size-7xl : 4.5rem;
+    --size-8xl :6rem ;
+    --size-9xl : 8rem;
+    --size-10xl : 10rem;
+   
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .about__title {
+    margin-left: 15px;
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+  }
+  
+  .about__description {
+    margin-left: 25px;
+    max-width: 90ch;
+    font-size: var(--size-xl);
+    color: var(--clr-slate600);
+  }
+  
+  
+  /* xs */
+  @media (min-width: 475px) {
+    .about {
+      gap: 1.5rem;
+    }
+  
+    .about__content {
+      gap: 1.5rem;
+    }
+  
+    .about__title {
+      font-size: var(--size-3xl);
+    }
+  
+    .about__description {
+      font-size: var(--size-base);
+    }
+  }
+  
+  /* sm */
+  @media (min-width: 640px) {
+    .about__img-wrapper {
+      margin: 0 auto;
+    }
+  
+    .about__img {
+      width: 28.6875rem;
+    }
+  }
+  
+  /* md */
+  /* @media (min-width: 768px) {} */
+  
+  /* lg */
+  @media (min-width: 1024px) {
+    .about {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .about__title {
+      font-size: var(--size-4xl);
+    }
+  
+    .about__description {
+      font-size: var(--size-lg);
+    }
+  }
+  
+  /* xl */
+  @media (min-width: 1280px) {
+    .about__content {
+      gap: 2rem;
+    }
+  
+    .about__title {
+      font-size: var(--size-5xl);
+    }
+  
+    .about__description {
+      font-size: var(--size-base);
+    }
+  
+    .about__subtitle {
+      font-size: var(--size-xl);
+    }
+    .about__img {
+      width: 30.75rem;
+      border-radius: 10px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .scrollToTop{
+	width:55px; 
+	height:55px;
+	padding:20px; 
+	position:fixed;
+	bottom:30px;
+	right:20px;
+	display:none;
+	background: url('https://static.tumblr.com/21f4567e2f4f5d293958de4f85169941/qbg3tzm/EL3nxgknw/tumblr_static_2rgujpkbkdq88occk8ogo800w.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}

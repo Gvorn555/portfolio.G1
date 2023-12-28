@@ -1,0 +1,149 @@
+:root {
+
+  --color-dark: #0f172a;
+  --color-light: #e2e8f0;
+  --color-slate400: #94a3b8;
+  --color-slate600:#475569 ;
+  --color-slate800: #1e293b;
+  --color-orange: #dc2626;
+  --color-indigo: #6366f1;
+  --color-green:#ecfdf5;
+
+}
+
+/* CSS */
+.btn1{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-indigo);
+  background-color: #ffffff;
+  cursor: pointer;
+  border: 5px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: fit-content;
+}
+.btn1:hover{
+  background-color: var(--color-green);
+}
+
+.btn1:active {
+  
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .btn1 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+
+/***********container**********/
+.container{
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: 2px red;
+}
+
+.section{
+  margin-top: 5rem;
+}
+
+/*****xs***/
+@media (min-width :475px) {
+  .container{
+    max-width: 475px;
+  }
+}
+/*****small***/
+@media (min-width :640px) {
+  .container{
+    max-width: 640px;
+  }
+}
+/*****md***/
+@media (min-width :768px) {
+  .container{
+    max-width: 768px;
+  }
+}
+
+/*****lg***/
+@media (min-width :1024px) {
+  .container{
+    max-width: 1024px;
+  }
+  .section{
+    margin-top: 10rem;
+  }
+}
+
+/*****xl***/
+@media (min-width :1280px) {
+  .container{
+    max-width: 1280px;
+  }
+}
+
+/*****2xl***/
+@media (min-width :1536px) {
+  .container{
+    max-width: 1536px;
+  }
+}
+
+
+
+
+
+
+
+
+.button-92 {
+  --c: #fff;
+  /* text color */
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    var(--color-indigo);
+  /* background color */
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+.button-92:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.button-92 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+}

@@ -1,0 +1,159 @@
+:root {
+
+    --color-dark: #0f172a;
+    --color-light: #e2e8f0;
+    --color-slate400: #94a3b8;
+    --color-slate600:#475569 ;
+    --color-slate800: #1e293b;
+    --color-orange: #dc2626;
+    --color-indigo: #6366f1;
+
+    /**size***/
+    --size-xxs : o.5rem;
+    --size-xs : 0.75rem;
+    --size-sm : 0.875rem;
+    --size-base : 1rem;
+    --size-lg : 1.25rem;
+    --size-xl : 1.5rem;
+    --size-2xl : 1.875rem;
+    --size-3xl :2.25rem ;
+    --size-5xl : 3rem;
+    --size-6xl : 3.75rem;
+    --size-7xl : 4.5rem;
+    --size-8xl :6rem ;
+    --size-9xl : 8rem;
+    --size-10xl : 10rem;
+   
+  }
+
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+}
+
+.hero__img{
+    display: inline-block;
+    border-radius: 50%;
+    height: 9rem;
+    width: 9rem;
+}
+.btn__img{
+  border-radius: 50%;
+  width: fit-content;
+  height: fit-content;
+}
+.hero__subtitle{
+    color: var(--color-slate400);
+    font-size: var(--size-xl);
+}
+.hero__title{
+    font-size: 2.8rem;
+}
+.hero__description{
+    max-width: 100ch;
+    font-size: var(--size-base);
+}
+.bd__sign{
+    display: inline-block;
+    width: 22;
+    height: 22;
+}
+.hero__btn{
+    text-transform: capitalize;
+    font-size: var(--size-base);
+}
+
+
+
+
+
+
+/*********************xs**************************/
+@media (min-width :475px) {
+    .hero {
+        gap: 1.5rem;
+    
+    }
+    
+    .hero__img{
+        height: 6.5rem;
+        width: 6.5rem;
+    }
+    .hero__subtitle{
+        font-size: var(--size-lg);
+    }
+    .hero__title{
+        font-size: var(--size-5xl);
+    }
+    .hero__description{
+        max-width: 100ch;
+        font-size: var(--size-sm);
+    }
+    .bd__sign{
+        display: inline-block;
+    }
+    .hero__btn{
+        text-transform: capitalize;
+    }
+  }
+  /*****small***/
+  @media (min-width :640px) {
+    .container{
+      max-width: 640px;
+    }
+  }
+  /*****md***/
+  @media (min-width :768px) {
+    .container{
+      max-width: 768px;
+    }
+  }
+  
+  /*****lg***/
+  @media (min-width :1024px) {
+    .hero {
+        gap: 1rem;
+    
+    }
+    
+    .hero__img{
+        height: 8rem;
+        width: 8rem;
+    }
+    .hero__subtitle{
+        font-size: var(--size-xl);
+    }
+    .hero__title{
+        font-size: var(--size-5xl);
+    }
+    .hero__description{
+        max-width: 100ch;
+        font-size: var(--size-lg);
+    }
+    .bd__sign{
+        display: inline-block;
+    }
+    .hero__btn{
+        text-transform: capitalize;
+    }
+  }
+  
+  /*****xl***/
+  @media (min-width :1280px) {
+    .container{
+      max-width: 1280px;
+    }
+  }
+  
+  /*****2xl***/
+  @media (min-width :1536px) {
+    .container{
+      max-width: 1536px;
+    }
+  }

@@ -1,0 +1,81 @@
+:root {
+
+    --color-dark: #0f172a;
+    --color-light: #e2e8f0;
+    --color-slate400: #94a3b8;
+    --color-slate600:#475569 ;
+    --color-slate800: #1e293b;
+    --color-orange: #dc2626;
+    --color-indigo: #6366f1;
+
+    /**size***/
+    --size-xxs : o.5rem;
+    --size-xs : 0.75rem;
+    --size-sm : 0.875rem;
+    --size-base : 1rem;
+    --size-lg : 1.25rem;
+    --size-xl : 1.5rem;
+    --size-2xl : 1.875rem;
+    --size-3xl :2.25rem ;
+    --size-5xl : 3rem;
+    --size-6xl : 3.75rem;
+    --size-7xl : 4.5rem;
+    --size-8xl :6rem ;
+    --size-9xl : 8rem;
+    --size-10xl : 10rem;
+
+   
+  }
+
+.mobile-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-dark);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .mobile-nav__menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .mobile-nav__link {
+    font-size: var(--size-sm);
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--clr-slate600);
+    letter-spacing: -0.05em;
+    transition: color 0.3s;
+  }
+  
+  .mobile-nav__link:hover {
+    color: var(--clr-rose);
+  }
+  
+  .mobile-nav__link-line {
+    border: 1px solid var(--clr-slate800);
+    padding-right: 1.5em;
+  }
+  
+  .mobile-nav__sun {
+    display: block;
+    width: var(--size-xl);
+    height: var(--size-xl);
+    color: var(--clr-slate600);
+  }
+  
+  .mobile-nav__btn {
+    font-size: var(--size-sm);
+  }
